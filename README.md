@@ -1,8 +1,6 @@
 # Smart Predictive TV Keyboard
 
-A **proof of concept** virtual on-screen keyboard for smart TVs that intelligently predicts the next likely characters based on user input. it simulates a TV remote control interface for intuitive and efficient text entry.
-
-The project demonstrates how predictive UX patterns can enhance keyboard navigation on devices with limited input methods like TV remotes.
+A **proof of concept** virtual on-screen keyboard for smart TVs that predicts the next likely characters based on user input. It simulates a TV remote control interface and demonstrates how predictive UX patterns can improve keyboard navigation on devices with limited input methods, such as TV remotes.
 
 ## Features
 

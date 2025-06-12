@@ -1,4 +1,4 @@
-/* General Reset & Base Styles */
+/* Reset and base styles */
 * {
   box-sizing: border-box;
 }
@@ -11,7 +11,7 @@ body {
   color: #fff;
 }
 
-/* Layout Containers */
+/* Layout containers */
 .app-wrapper {
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@ body {
   color: #aaa;
 }
 
-/* TV Frame and Input */
+/* TV frame and input */
 .tv-frame {
   background: #111;
   border: 10px solid #444;
@@ -68,7 +68,6 @@ body {
   white-space: nowrap;
 }
 
-/* On-Screen Keyboard */
 .keyboard {
   display: grid;
   grid-template-columns: repeat(6, 50px);
@@ -125,7 +124,6 @@ body {
   gap: 10px;
 }
 
-/* Remote Buttons */
 .btn {
   background: #444;
   color: white;

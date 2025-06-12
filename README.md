@@ -10,7 +10,6 @@ This project showcases how predictive UX patterns can enhance keyboard navigatio
 - Keyboard navigation with arrow keys
 - Space and backspace support
 - Toggleable prediction mode
-- Fully responsive and TV-style UI
 
 ## Demo
 

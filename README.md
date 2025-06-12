@@ -1,28 +1,17 @@
-## Usage
+# Smart Predictive TV Keyboard
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+A **proof of concept** virtual on-screen keyboard for smart TVs that intelligently predicts the next likely characters based on user input. it simulates a TV remote control interface for intuitive and efficient text entry.
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+This project showcases how predictive UX patterns can enhance keyboard navigation on devices with limited input methods like TV remotes.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Predictive typing using a simple dictionary
+- Keyboard navigation with arrow keys
+- Space and backspace support
+- Toggleable prediction mode
+- Fully responsive and TV-style UI
 
-### `npm run dev`
+## Demo
 
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-Learn more about deploying your application with the [documentations](https://vite.dev/guide/static-deploy.html)
+https://smart-tv-leyboard.netlify.app/

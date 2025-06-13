@@ -152,15 +152,31 @@ function App() {
         <div class="remote-control">
           <div class="remote-btns">
             <div class="remote-row remote-up">
-              <button class="btn up" onClick={() => moveSelection('up')}>▲</button>
+              <button class="btn up" onClick={() => moveSelection('up')}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M7 14l5-5 5 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              </button>
             </div>
             <div class="remote-row remote-middle">
-              <button class="btn left" onClick={() => moveSelection('left')}>◄</button>
+              <button class="btn left" onClick={() => moveSelection('left')}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M14 7l-5 5 5 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
               <button class="btn ok" onClick={selectKey}>OK</button>
-              <button class="btn right" onClick={() => moveSelection('right')}>►</button>
+              <button class="btn right" onClick={() => moveSelection('right')}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M10 7l5 5-5 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
             </div>
             <div class="remote-row remote-down">
-              <button class="btn down" onClick={() => moveSelection('down')}>▼</button>
+              <button class="btn down" onClick={() => moveSelection('down')}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
             </div>
           </div>
           <button class="btn toggle" onClick={() => setPredictiveMode(!predictiveMode())}>

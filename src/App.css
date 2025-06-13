@@ -1,16 +1,3 @@
-/* Reset and base styles */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  background-color: #000;
-  color: #fff;
-}
-
 /* Layout containers */
 .app-wrapper {
   display: flex;

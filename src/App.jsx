@@ -12,7 +12,7 @@ function App() {
   const cols = 6; // number of columns in the keyboard grid
 
   // Generate keyboard keys (letters + SPACE + backspace)
-  const extendedKeys = () => [...allLetters, "SPACE", "←"];
+  const extendedKeys = () => [...allLetters, "SPACE", "BACKSPACE"];
 
   // Predict next likely characters based on current input prefix
   const getLikelyNextLetters = () => {
@@ -33,7 +33,7 @@ function App() {
   // Check if a key should be active based on prediction
   const isKeyActive = (key) => {
     if (!predictiveMode()) return true;
-    return getLikelyNextLetters().includes(key) || key === "SPACE" || key === "←";
+    return getLikelyNextLetters().includes(key) || key === "SPACE" || key === "BACKSPACE";
   };
 
   // Fallback: find the first available active key
@@ -112,7 +112,7 @@ function App() {
     if (!isKeyActive(key)) return;
     if (key === "SPACE") {
       setCurrentInput(currentInput() + " ");
-    } else if (key === "←") {
+    } else if (key === "BACKSPACE") {
       setCurrentInput(currentInput().slice(0, -1));
     } else {
       setCurrentInput(currentInput() + key);
@@ -141,7 +141,7 @@ function App() {
                 <div
                   class={`key ${!isKeyActive(key) ? 'inactive' : ''} ${i() === selectedIndex() ? 'selected' : ''}`}
                 >
-                  {key === "SPACE" ? "␣" : key === "←" ? "←" : key}
+                  {key === "SPACE" ? "␣" : key === "BACKSPACE" ? "←" : key}
                 </div>
               )}
             </For>
